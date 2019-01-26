@@ -23,10 +23,6 @@
 
 
 
-  
-  <input type="text" name="pet[name]" id="pet_name">
-  
-  <br></br>
 
   <%Owner.all.each do |owner|%>
     <input type="checkbox" name="pet[owner_id]" id="<%= owner.name %>" value="<%=owner.id%>"><%=owner.name%></input>
